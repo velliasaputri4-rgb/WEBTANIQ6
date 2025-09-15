@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio Modern TaniApps</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav>
+  <h1>TaniQ🌱</h1>
+  <div class="hamburger" id="hamburger">&#9776;</div> 
+  <ul id="nav-menu">
+    <li><a href="#home">Beranda</a></li>
+    <li><a href="#about">Tentang</a></li>
+    <li><a href="#feature">Fitur</a></li>
+    <li><a href="#infographics">Info Grafis</a></li>
+    <li><a href="#news">Berita</a></li>
+    <li><a href="#contact">Kontak</a></li>
+  </ul>
+</nav>
+
+<script>
+const hamburger = document.getElementById('hamburger');
+const navMenu = document.getElementById('nav-menu');
+const navOverlay = document.getElementById('nav-overlay');
+
+hamburger.addEventListener('click', () => {
+  navMenu.classList.toggle('active');
+  navOverlay.classList.toggle('active');
+});
+
+document.querySelectorAll('#nav-menu a').forEach(link => {
+  link.addEventListener('click', () => {
+    navMenu.classList.remove('active');
+    navOverlay.classList.remove('active');
+  });
+});
+
+</script>
+
+
+
+  <header id="home" class="hero">
+    <div class="hero-text">
+      <h1>Halo, Selamat Datang di <span class="highlight">TaniQ</span></h1>
+      <p>🌾 Palawija | WEB Digital untuk Petani Modern 🌱</p>
+      <a href="#feature" class="btn">Lihat Fitur</a>
+    </div>
+  </header>
+
+  <section id="about" class="section about">
+    <h2>Tentang</h2>
+    <div class="about" class="section about">
+    <p>TaniQ Digital WEB merupakan inisiatif digital yang fokus membantu petani palawija melalui teknologi. 
+       Beberapa aplikasi dikembangkan untuk mendukung pengelolaan pertanian yang lebih efisien.
+       TaniQ dirancang khusus untuk mendukung petani palawija dalam mengelola pertanian mereka secara lebih modern, praktis, dan efisien.
+       WEB ini berfungsi sebagai asisten pertanian yang menghadirkan berbagai fitur bermanfaat untuk membantu petani mengambil keputusan yang tepat di lapangan.</p>
+    <p>🎯 Tujuan Utama <br>
+       - Membantu petani mengoptimalkan hasil panen. <br>
+       - Menyediakan informasi cuaca terkini untuk perencanaan aktivitas pertanian. <br>
+       - Memberikan solusi sederhana atas masalah-masalah pertanian seperti hama, penyakit, dan kualitas tanah. <br></p>
+    <p>💡 Manfaat untuk Petani <br>
+       - Meningkatkan produktivitas melalui perencanaan yang lebih tepat. <br>
+       - Mengurangi kerugian akibat cuaca tidak menentu. <br>
+       - Mempermudah akses informasi pertanian tanpa harus mencari sumber berbeda.</p>
+    </div>
+  </section><br><br><br>
+
+  <section id="feature" class="section feature">
+    <h2>Fitur-fitur</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <h3>Prediksi Panen🌱</h3>
+        <p>Menampilkan prediksi masa panen tanaman palawija dan penjelasan masa tumbuhnya.</p>
+        <a href=" https://velliasaputri4-rgb.github.io/PrediksiPanen1/" target="_blank">
+          🔗 Lihat Detail
+        </a>
+      </div><br>
+      <div class="project-card">
+        <h3>🌦️ WeatherApps</h3>
+        <p>Menampilkan informasi cuaca terkini untuk membantu petani merencanakan aktivitas bertani.</p>
+        <a href="https://velliasaputri4-rgb.github.io/WeatherApps/" target="_blank">
+          🔗 Lihat Detail
+        </a>
+      </div><br>
+      <div class="project-card">
+        <h3>Rekomendasi Tani🌱</h3>
+        <p>Memberikan solusi dan rekomendasi sederhana untuk mengatasi masalah pertanian seperti hama dan tanah.</p>
+        <a href="https://velliasaputri4-rgb.github.io/RekomendasiTani/" target="_blank">
+          🔗 Lihat Detail
+        </a>
+      </div><br>
+      <div class="project-card">
+        <h3>Forum Petani🌱</h3>
+        <p>Forum ini dapat membangun komunitas yang saling mendukung dan berbagi pengetahuan antar petani.</p>
+        <a href=" https://velliasaputri4-rgb.github.io/ForumDiskusi/" target="_blank">
+          🔗 Lihat Detail
+        </a>
+      </div><br>
+      <div class="project-card">
+        <h3>Pencatat Keuangan TaniQ🌱</h3>
+        <p>Catatan pemasukan/penjualan hasil panen dan pengeluaran biaya tanam.</p>
+        <a href=" https://velliasaputri4-rgb.github.io/Catatan-tani/" target="_blank">
+          🔗 Lihat Detail
+        </a>
+      </div><br>
+      <div class="project-card">
+        <h3>Analisis Tanah🌱</h3>
+        <p>Input data tanah (pH, kelembaban, jenis tanah). Aplikasi memberi rekomendasi tanaman yang cocok & pupuk yang sesuai.</p>
+        <a href=" https://velliasaputri4-rgb.github.io/jenistanah/" target="_blank">
+          🔗 Lihat Detail
+        </a>
+      </div><br>
+    </div>
+  </section>
+
+  <section id="infographics" class="section infographics">
+    <h2>📊 Infografis Pertanian</h2>
+
+    <div class="news-card">
+      <h3>Infografis Interaktif sumber resmi BPS, publikasi pemerintah, dan jurnal untuk Provinsi Jawa Tengah dari tahun 2021-2023.</h3>
+      <canvas id="myChart"></canvas>
+    </div><br>
+
+    <div class="news-card" style="background:#ecfdf5; text-align:center;">
+      <h3>Infografis Animasi</h3>
+      <lottie-player 
+        src="https://assets1.lottiefiles.com/packages/lf20_2LdLki.json"
+        background="transparent"
+        speed="1"
+        style="width: 250px; height: 250px; margin: 0 auto;"
+        loop
+        autoplay>
+      </lottie-player>
+    </div>
+  </section>
+
+  <section id="news" class="section news">
+  <h2>Berita Pertanian Terkini!</h2>
+  <div class="news-card">
+  <h3>🌾 Harga Singkong Anjlok Akibat Banjir Impor</h3>
+  <p>Gubernur Lampung bersama bupati bertemu Menteri Pertanian untuk membahas anjloknya harga singkong akibat banjir impor.</p>
+  <a href="https://www.detik.com/tag/pertanian" target="_blank">🔗 Baca Selengkapnya</a>
+</div><br>
+
+<div class="news-card">
+  <h3>👩‍🌾 Petani Milenial Edukasi Generasi Muda via Konten Digital</h3>
+  <p>Petani milenial di Garut sukses dalam budidaya sayuran dan kini mengedukasi generasi muda melalui konten digital.</p>
+  <a href="https://www.sindonews.com/topic/969/pertanian" target="_blank">🔗 Baca Selengkapnya</a>
+</div><br>
+
+<div class="news-card">
+  <h3>🌱 Sektor Pertanian Topang Pertumbuhan Ekonomi 2025</h3>
+  <p>Sektor pertanian diperkirakan akan menjadi penopang utama pertumbuhan ekonomi Indonesia pada tahun 2025.</p>
+  <a href="https://infopublik.id/kategori/nasional-ekonomi-bisnis/926682/sektor-pertanian-bakal-topung-pertumbuhan-ekonomi-2025" target="_blank">🔗 Baca Selengkapnya</a>
+</div><br>
+
+<div class="news-card">
+  <h3>🚜 Kementan Percepat Kegiatan OPLAH dan Cetak Sawah</h3>
+  <p>Kementerian Pertanian menggelar rapat untuk mempercepat kegiatan Optimasi Lahan (OPLAH) dan cetak sawah guna mendukung ketahanan pangan.</p>
+  <a href="https://lahanirigasi.pertanian.go.id/berita/kementan-adakan-rapat-percepatan-kegiatan-oplah-dan-cetak-sawah-tahun-2025" target="_blank">🔗 Baca Selengkapnya</a>
+</div>
+</section><br><br><br><br><br><br><br><br><br><br>
+
+
+  <section id="contact" class="section contact">
+    <h2>Kontak</h2>
+    <p>Hubungi saya di <a href="mailto:velliasaputri4@gmail.com">velliasaputri4@gmail.com</a></p>
+    <p><a href="mailto:SMK Negeri 1 Bangsri">SMK Negeri 1 Bangsri</a></p>
+    © <span id="year">2025</span> TaniQ — WEB Digital Modern
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<script>
+  const ctx = document.getElementById('myChart');
+  new Chart(ctx, {
+    type: 'bar',
+     data: {
+      labels: [
+        'Jagung 🌽','Kedelai 🌱','Kacang Tanah 🥜','Kacang Hijau 🌱','Kacang Panjang 🌿',
+        'Ubi Jalar 🍠','Singkong 🌿','Talas 🍃','Kentang 🥔',
+        'Cabai Merah 🌶️','Cabai Rawit 🌶️','Tomat 🍅',
+        'Bawang Merah 🧅','Bawang Putih 🧄','Wortel 🥕',
+        'Sawi 🥬','Bayam 🌿','Kangkung 🌱',
+        'Jahe 🫚','Kunyit ✨','Lengkuas 🌿',
+        'Mentimun 🥒','Labu 🎃','Oyong 🍃','Pare 🍂',
+        'Gembili 🌿','Sorgum 🌾'
+      ],
+      datasets: [{
+        label: 'Produksi Rata-rata (ton/ha)',
+        data: [
+          7, 2.5, 1.8, 2.2, 3.0,
+          3.2, 5.0, 4.5, 15,
+          10, 8, 20,
+          9, 8, 25,
+          12, 10, 11,
+          6, 5, 7,
+          14, 13, 9, 8,
+          4, 3.8
+        ],
+        backgroundColor: [
+          '#10b981','#3b82f6','#f59e0b','#22c55e','#8b5cf6',
+          '#ef4444','#14b8a6','#eab308','#9ca3af',
+          '#dc2626','#f87171','#fb923c',
+          '#f97316','#facc15','#84cc16',
+          '#22d3ee','#2dd4bf','#4ade80',
+          '#a855f7','#d946ef','#ec4899',
+          '#0ea5e9','#38bdf8','#60a5fa','#6366f1',
+          '#9333ea','#7c3aed'
+        ],
+        borderRadius: 8
+      }]
+    }
+  });
+</script>
+<div id="nav-overlay"></div>
+
+</body>
+</html>
